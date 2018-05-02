@@ -42,12 +42,59 @@
             <li class="navlink"><a href="menu.html">Menu</a></li>
             <li class="logo"><a href="index.html"><img src="img/logo180.png" alt="Donut Delights Logo"></a></li>
             <li class="navlink navright"><a href="about.html">About</a></li>
-            <li class="navlink navright"><a href="contact.html">Contact</a></li>
+            <li class="navlink navright"><a href="contact.html" class="currentpage">Find Us</a></li>
         </ul>
     </nav>
 </header>
 
 <main>
+    <h1>Location &amp; Contact</h1>
+    <div class="smallboxes">
+        <section id="contact">
+            <p>Our shop is located in east Urbana:</p>
+            <h3>2112 Main Street<br>Urbana, Illinois 61801<br><br>(217) 555-1234</h3>
+            <p>Questions or Concerns?</p>
+            <h3><a href="#form">Try Our Comment Form</a></h3>
+            <p>Or send an email to:</p>
+            <!-- Used a basic email obfuscator -->
+            <h3><a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#x6f;&#x3a;&#x63;&#x6f;&#110;&#x74;&#97;&#x63;&#116;&#x40;&#100;&#111;&#110;&#x75;&#116;&#x64;&#x65;&#x6c;&#105;&#x67;&#x68;&#x74;&#x73;&#46;&#x63;&#111;&#109;">&#99;&#x6f;&#110;&#x74;&#97;&#99;&#x74;&#x40;&#100;&#111;&#110;&#117;&#116;&#100;&#x65;&#x6c;&#x69;&#x67;&#104;&#116;&#x73;&#x2e;&#x63;&#111;&#x6d;</a></h3>
+        </section>
+        <section id="map">
+            <iframe width="400" height="400" frameborder="0"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAuLcw3BK3A1Y4-Qs5UK3awoDWCdqkgD8E&amp;q=2112+Main+Street,Urbana+IL" allowfullscreen>
+            </iframe>
+        </section>
+        <section id="donutdisplay">
+            <figure>
+                <img src="img/display2.jpg" alt="Display of Donuts">
+                <figcaption>"Donut" delay, stop by today!</figcaption>
+            </figure>
+        </section>
+        <section id="hours">
+            <div class="innerbox">
+                <h2>Store Hours</h2>
+                <h3>Monday to Friday</h3>
+                <p>5:30 AM to 2:30 PM</p>
+                <h3>Saturday &amp; Sunday</h3>
+                <p>6:30 AM to 3:30 PM</p>
+            </div>
+        </section>
+    </div>
+    <section id="storefront">
+        <img src="img/storefront2.jpg" alt="Donut Delights Storefront">
+    </section>
+    <section id="form">
+        <h2>Questions or Feedback? Leave a Message! WIP</h2>
+        <form action="" method="POST" name="commentform" id="commentform">
+            <input type="text" name="name" id="name" placeholder="Your Name" required>
+            <input type="email" name="email" id="email" placeholder="Email Address" required><br>
+            <input type="text" name="subject" id="subject" placeholder="Subject" required><br>
+            <textarea name="message" id="message" placeholder="Your Message Here"></textarea><br>
+            <input type="checkbox" name="subscribe" id="subscribe">
+            <label for="subscribe">Check to subscribe to our newsletter!</label>
+            <input type="submit" value="Submit">
+        </form>
+    </section>
 </main>
 
 <footer>

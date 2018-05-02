@@ -1,0 +1,112 @@
+/* Menu Text */
+div#menucolumn {
+    float: left;
+    width: 55%;
+}
+
+/* Menu Sections */
+section {
+    background: rgba(86,40,20,0.8);
+    padding: 2em;
+    margin: 2em;
+    object-fit: contain;
+}
+
+h2 {
+    margin: 0;
+    margin-bottom: 0.6em;
+    font-family: passionone, Tahoma, sans-serif;
+    font-size: 2.1em;
+    text-align: center;
+    font-weight: normal;
+    letter-spacing: 0.02em;
+}
+
+section p {
+    clear: both;
+    font-size: 1.25em;
+    margin: 0;
+}
+
+section p span {
+    float: right;
+}
+
+#donuts ul {
+    padding: 0;
+    font-weight: 300;
+    font-size: 0.9em;
+    margin: 1em 1.5em 1.5em;
+    overflow: auto;
+}
+
+#donuts ul li {
+    width: 30%;
+    min-width: 9em;
+    list-style: none;
+    float: left;
+    margin: 0.15em 0.2em;
+}
+
+#favorites p {
+    margin-top: 1em;
+}
+
+#drinks table {
+    width: 100%;
+}
+
+#drinks thead td {
+    font-size: 1em;
+}
+
+#drinks td {
+    font-size: 1.25em;
+    text-align: right;
+    padding-top: 1em;
+}
+
+#drinks td:first-child {
+    text-align: left;
+}
+
+/* Image bar */
+#menuimage {
+    float: right;
+    width: 45%;
+    margin: 2em 0;
+}
+
+#menuimage figure {
+    object-fit: contain;
+    margin: 0;
+    margin-right: 2em;
+    padding: 1em 8%;
+    background: rgba(86,40,20,0.8);
+}
+
+#menuimage img {
+    width: 100%;
+    display: block;
+    border: 2px solid #ecd7a1;
+}
+
+#menuimage figure:first-child {
+    padding-top: 2em;
+}
+
+#menuimage figure:last-child {
+    padding-bottom: 2em;
+}
+
+/* Text at bottom */
+p#joke {
+    clear: both;
+    margin: 1.43em;
+    padding: 0.6em;
+    font-style: italic;
+    text-align: center;
+    font-size: 1.4em;
+    letter-spacing: 0.05em;
+    background: rgba(86,40,20,0.8);
+}

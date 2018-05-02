@@ -1,0 +1,16 @@
+section {
+    margin: 2em;
+    padding: 3em;
+    background: rgba(86,40,20,0.8);
+    overflow: auto;
+}
+
+section div {
+    float: left;
+    width: 45%;
+}
+
+section figure {
+    float: left;
+    width: 45%;
+}

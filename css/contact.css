@@ -1,0 +1,195 @@
+section {
+    background: rgba(86,40,20,0.8);
+    padding: 2em;
+}
+
+/* Half(-ish) width sections */
+.smallboxes {
+    margin-top: 2em;
+    margin-left: 2em;
+}
+
+.smallboxes section {
+    border-right: 2em solid transparent;
+    border-bottom: 2em solid transparent;
+    background-clip: padding-box;
+    float: left;
+}
+
+.smallboxes #contact {
+    width: 30em;
+    height: 30.85em;
+    padding: 3.5em 3.5em;
+}
+
+#contact p {
+    font-size: 1.2em;
+}
+
+#contact h3 {
+    margin-left: 1.5em;
+    font-size: 1.25em;
+}
+
+#contact a {
+    color: #ecd7a0;
+}
+
+#contact a:hover,
+#contact a:focus {
+    color: #ffc73b;
+}
+
+.smallboxes #map {
+    float: none;
+    height: 30.85em;
+    overflow: hidden;
+    padding: 2em 3%;
+}
+
+#map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.smallboxes #donutdisplay {
+    width: 60%;
+}
+
+#donutdisplay figure {
+    margin: 0 auto;
+    text-align: center;
+}
+
+#donutdisplay figcaption {
+    padding-top: 0.4em;
+    font-style: italic;
+    text-align: center;
+    font-size: 1.3em;
+    letter-spacing: 0.05em;
+}
+
+#donutdisplay img {
+    width: 30em;
+    border: 2px solid #ecd7a1;
+}
+
+.smallboxes #hours {
+    width: 40%;
+    height: 29em;
+    padding: 3em;
+}
+
+#hours .innerbox,
+#hours h2,
+#hours h3,
+#hours p {
+    width: fit-content;
+    width: -moz-fit-content;
+    width: -webkit-fit-content;
+}
+
+#hours .innerbox {
+    margin: 0 auto;
+}
+
+#hours h2 {
+    font-family: passionone, Tahoma, sans-serif;
+    font-size: 2.3em;
+    font-weight: normal;
+    letter-spacing: 0.02em;
+}
+
+#hours h3 {
+    margin-left: 1em;
+    font-size: 1.4em;
+    font-weight: normal;
+}
+
+#hours p {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-left: 2em;
+    margin-bottom: 2em;
+}
+
+.smallboxes::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+#storefront {
+    margin: 2em;
+    margin-top: 0;
+    padding: 3em;
+    height: 38em;
+}
+
+#storefront img {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1020px;
+    border: 2px solid #ecd7a1;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#form {
+    margin: 2em;
+    overflow: auto;
+    padding: 4%;
+}
+
+#form h2 {
+    font-family: passionone, Tahoma, sans-serif;
+    font-size: 2em;
+    margin: 0 0 0.5em;
+    letter-spacing: 0.02em;
+    font-weight: normal;
+}
+
+#form input,
+#form textarea {
+    margin: 0.5em 0;
+    padding: 0.3em 0.5em;
+    color: #281200;
+    background: #fff8e2;
+    border: 2px solid black;
+    font-weight: bold;
+}
+
+#form input[name="name"] {
+    width: 45%;
+}
+
+#form input[name="email"] {
+    width: 53%;
+    float: right;
+}
+
+#form input[name="subject"] {
+    width: 100%;
+}
+
+#form textarea[name="message"] {
+    width: 100%;
+    height: 15em;
+}
+
+#form input[name="subscribe"] {
+    margin-top: 0.8em;
+    margin-left: 0.3em;
+}
+
+#form input[type="submit"] {
+    margin: 0;
+    float: right;
+    width: 8em;
+    font-size: 1.2em;
+    background: #281200;
+    color: #fff8e2;
+    border-color: #ecd7a0;
+}
