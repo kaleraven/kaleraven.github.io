@@ -1,16 +1,81 @@
 section {
     margin: 2em;
-    padding: 3em;
     background: rgba(86,40,20,0.8);
-    overflow: auto;
+    letter-spacing: 0.05em;
+    line-height: 150%;
 }
 
 section div {
-    float: left;
-    width: 45%;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 5%;
+    font-size: 1.1em;
 }
 
 section figure {
-    float: left;
+    display: table-cell;
+    vertical-align: middle;
+    padding: 5%;
+}
+
+section img {
+    width: 100%;;
+    border: 1px solid #ecd7a1;
+}
+
+section p {
+    margin: 0;
+}
+
+section .p1 {
+    padding-bottom: 5%;
+}
+
+#first div {
+    width: 60%;
+}
+#first figure {
+    width: 40%;
+}
+
+#second figure {
     width: 45%;
+}
+#second div {
+    width: 55%;
+}
+
+#third div {
+    width: 50%;
+}
+#third figure {
+    width: 50%;
+}
+
+#fourth div {
+    width: 45%;
+}
+#fourth figure {
+    width: 55%;
+}
+#fourth h3 {
+    font-family: passionone, Tahoma, sans-serif;
+    margin: 0 0 5%;
+    font-size: 2em;
+    font-weight: normal;
+}
+
+#fourth p {
+    margin-bottom: 12%;
+}
+
+#fourth br {
+    content: "";
+    display: block;
+    height: 0.8em;
+}
+
+aside {
+    font-size: 0.5em;
+    line-height: normal;
 }

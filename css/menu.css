@@ -1,10 +1,9 @@
 /* Menu Text */
 div#menucolumn {
     float: left;
-    width: 55%;
+    width: 50%;
 }
 
-/* Menu Sections */
 section {
     background: rgba(86,40,20,0.8);
     padding: 2em;
@@ -73,22 +72,23 @@ section p span {
 /* Image bar */
 #menuimage {
     float: right;
-    width: 45%;
-    margin: 2em 0;
+    width: 50%;
+    border-right: 2em solid transparent;
+    border-top: 2em solid transparent;
+    margin-bottom: 2em;
+    background: rgba(86,40,20,0.8);
+    background-clip: content-box;
 }
 
 #menuimage figure {
-    object-fit: contain;
-    margin: 0;
-    margin-right: 2em;
+    margin: 0 auto;
     padding: 1em 8%;
-    background: rgba(86,40,20,0.8);
 }
 
 #menuimage img {
     width: 100%;
     display: block;
-    border: 2px solid #ecd7a1;
+    border: 1px solid #ecd7a1;
 }
 
 #menuimage figure:first-child {

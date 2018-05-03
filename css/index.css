@@ -36,8 +36,8 @@ nav .logo {
     display: block;
     width: 100%;
     position: relative;
-    /* border-left: 5px solid #563a24;
-    border-right: 5px solid #563a24; */
+    border-left: 5px solid #563a24;
+    border-right: 5px solid #563a24;
     z-index: -1;
 }
 
@@ -65,23 +65,31 @@ main hr {
 #promotion {
     max-width: 1366px;
     margin: 2em auto;
+    overflow: auto;
+}
+
+#promotion div {
+    padding: 2.5%;
+    background: rgba(86,40,20,0.8);
+    float: left;
+    margin: 0 2em 2em 0;
+}
+
+#promotion figure {
+    position: relative;
+    margin: 0;
 }
 
 #promotion #freecoffee {
-    margin: 0 2%;
-    padding: 2%;
-    background: rgba(86,40,20,0.8);
-    width: 32%;
-    box-sizing: border-box;
+    width: 35%;
 }
 
-#promotion #freecoffee #ytaspectratio {
+#freecoffee #ytaspectratio {
     width: 100%;
     padding-top: 75%;
-    position: relative;
 }
 
-#promotion #freecoffee iframe {
+#freecoffee iframe {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -91,3 +99,10 @@ main hr {
     height: 100%;
 }
 
+#vetad {
+    width: 31.6%;
+}
+
+#vetad img {
+    width: 100%;
+}
