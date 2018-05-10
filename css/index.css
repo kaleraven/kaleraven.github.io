@@ -1,13 +1,3 @@
-
-html {
-
-}
-
-body {
-
-}
-
-
 /*  Nav Bar  */
 nav {
     font-size: 2.2em;
@@ -25,14 +15,14 @@ nav .logo {
     top: -3.5em;
 }
 
-/*  Main  */
-#splash {
+/*  Splash Image  */
+.splash {
     position: relative;
     width: 100%;
     overflow: hidden;
 }
 
-#splash img {
+.splash img {
     display: block;
     width: 100%;
     position: relative;
@@ -41,7 +31,7 @@ nav .logo {
     z-index: -1;
 }
 
-#splash p {
+.splash p {
     position: absolute;
     bottom: 5%;
     left: 4%;
@@ -62,33 +52,38 @@ main hr {
     border-bottom: 10px solid #d7b58f;
 }
 
-#promotion {
+/* Main content boxes */
+.promotion {
+    width: 100%;
     max-width: 1366px;
     margin: 2em auto;
-    overflow: auto;
 }
 
-#promotion div {
+.promotion > div {
+    display: table;
+    width: 100%;
+}
+
+.promotion div figure {
+    display: table-cell;
+    vertical-align: middle;
     padding: 2.5%;
-    background: rgba(86,40,20,0.8);
-    float: left;
-    margin: 0 2em 2em 0;
-}
-
-#promotion figure {
-    position: relative;
+    /* background: rgba(86,40,20,0.8); */
+    background: rgba(93,46,26,0.8);
+    border-right: 2em solid transparent;
+    background-clip: padding-box;
     margin: 0;
 }
 
-#promotion #freecoffee {
-    width: 35%;
+.promotion #freecoffee {
+    width: 37%;
 }
-
 #freecoffee #ytaspectratio {
+    /* To set fixed aspect ratio */
+    position: relative;
     width: 100%;
     padding-top: 75%;
 }
-
 #freecoffee iframe {
     position: absolute;
     top: 0;
@@ -99,10 +94,78 @@ main hr {
     height: 100%;
 }
 
-#vetad {
-    width: 31.6%;
+.promotion #vetad {
+    width: 33.4%;
 }
-
 #vetad img {
     width: 100%;
+}
+
+.promotion #factoid {
+    width: 29.6%;
+    border-right: none;
+    overflow: hide;
+}
+#factoid h2 {
+    text-align: center;
+    font-size: 2.5em;
+    font-family: passionone, Verdana, sans-serif;
+    letter-spacing: 0.01em;
+    font-weight: normal;
+    margin-top: 0;
+}
+#factoid p {
+    text-align: center;
+    width: 80%;
+    font-size: 1.4em;
+    margin: 0 auto;
+    padding-bottom: 1em; /* To shift contents up */
+}
+
+.promotion .secondrow {
+    margin-top: 2.5%;
+}
+
+.promotion #subscription {
+    width: 45%;
+    text-align: center;
+    padding: 3% 5%;
+}
+#subscription p {
+    font-size: 1.5em;
+    margin: 0;
+}
+#subscription input {
+    padding: 0.3em;
+    border: 1px solid #ecd7a0;
+    font-size: 1.2em;
+    padding: 0.3em;
+    font-weight: bold;
+}
+#subscription input[type="email"] {
+    width: 90%;
+    margin-top: 2em;
+    color: #281200;
+}
+#subscription input[type="submit"] {
+    margin-top: 1.5em;
+    width: 30%;
+    background: #281200;
+}
+
+.promotion #socialmedia {
+    padding: 3% 4%;
+    border-right: none;
+    text-align: center;
+}
+#socialmedia p {
+    font-size: 1.6em;
+    margin: 0 0 1.5em;
+}
+#socialmedia a {
+    width: 24%;
+    display: inline-block;
+}
+#socialmedia img {
+    width: 75px;
 }

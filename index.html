@@ -49,20 +49,43 @@
 </header>
 
 <main>
-    <section id="splash">
+    <section class="splash">
         <img src="img/donutdelightsplash2.png" title="Image of Coffee and Donut">
         <p>The finest in breakfast treats and coffees since 1971.</p>
     </section>
     <hr>
-    <section id="promotion">
-        <div id="freecoffee">
-            <figure id="ytaspectratio">
-                <iframe src="https://www.youtube-nocookie.com/embed/aWMjUQFEGd0?rel=0&amp;controls=0&amp;showinfo=0&amp;loop=1&amp;autoplay=0&amp;modestbranding=1&amp;fs=0&amp;playlist=aWMjUQFEGd0" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+    <!--This section is structured as a CSS table to allow for responsive layout-->
+    <section class="promotion">
+        <div class="firstrow">
+            <figure id="freecoffee">
+                <div id="ytaspectratio">
+                    <iframe src="https://www.youtube-nocookie.com/embed/aWMjUQFEGd0?rel=0&amp;controls=0&amp;showinfo=0&amp;loop=1&amp;autoplay=0&amp;modestbranding=1&amp;fs=0&amp;playlist=aWMjUQFEGd0" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+                </div>
+            </figure>            
+            <figure id="vetad">
+                <img src="img/vetsAdLoop.gif" alt="Veterans Eat Free">
+            </figure>
+            <figure id="factoid">
+                <h2>Did You Know?</h2>
+                <p>About 10 billion donuts are produced in the US each year!</p>
             </figure>
         </div>
-        <div id="vetad">
-            <figure>
-                <img src="img/vetsAdSmall.gif" alt="Veterans Eat Free">
+
+        <div class="secondrow">
+            <figure id="subscription">
+                <p>Subscribe to our newsletter for the latest on our seasonal offerings and special events!</p>
+                <form action="https://formspree.io/kyang1@stu.parkland.edu" method="POST" name="subscribeform">
+                    <input type="email" name="email" placeholder="Enter Email Address Here" required>
+                    <input type="hidden" name="_subject" value="Subscribe">
+                    <br><input type="submit" value="Submit">
+                </form>
+            </figure>
+            <figure id="socialmedia">
+                <p>Check Us Out On Social Media For More Fun Events and Promotions!</p>
+                <a href="https://twitter.com/"><img src="img/twitter.png" alt="Twitter Icon"></a>
+                <a href="https://www.facebook.com/"><img src="img/facebook.png" alt="Facebook Icon"></a>
+                <a href="https://www.instagram.com/"><img src="img/instagram.png" alt="Instagram Icon"></a>
+                <a href="https://plus.google.com/"><img src="img/googleplus.png" alt="Google+ Icon"></a>
             </figure>
         </div>
     </section>
