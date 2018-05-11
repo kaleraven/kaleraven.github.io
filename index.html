@@ -6,10 +6,8 @@
     <meta name="description" content="Home of Donut Delights in Champaign. Come try our fresh baked donuts and our in-house roasted coffee!">
     <meta name="keyword" content="donut delights, donut shop, donuts, coffee, pastries, breakfast, baked, champaign, local">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="icon" href="favicon.ico">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/site.css">
-    <link rel="stylesheet" href="css/index.css">
     <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
     <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-touch-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-touch-icon-114x114.png">
@@ -24,6 +22,11 @@
     <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
     <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
     <link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128">   
+
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/site.css">
+    <link rel="stylesheet" href="css/index.css">
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118467175-1"></script>
     <script>
@@ -32,6 +35,38 @@
         gtag('js', new Date());
         gtag('config', 'UA-118467175-1');
     </script>
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script>
+        $().ready(function() {
+            var validator = $("form").validate({
+                errorPlacement: function(error, element) {
+                    $( element )
+                        .closest( "form" )
+                            .find( "label[for='" + element.attr( "id" ) + "']" )
+                                .append( error );
+                },
+                errorElement: "span",
+                rules: {
+                    email: {
+                        required: true,
+                        email: true
+                    }
+                },
+                messages: {
+                    email: {
+                        required: "Must enter an email address to subscribe.",
+                        email: "Please enter a valid email address."
+                    }
+                }
+            });
+
+            $(".cancel").click(function() {
+                validator.resetForm();
+            });
+        });
+    </script>
+    
 </head>
 
 <body>
@@ -43,49 +78,50 @@
             <li class="navlink"><a href="menu.html">Menu</a></li>
             <li class="logo"><img src="img/logo300.png" alt="Donut Delights Logo"></li>
             <li class="navlink navright"><a href="about.html">About</a></li>
-            <li class="navlink navright"><a href="contact.html">Find Us</a></li>
+            <li class="navlink navright"><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 </header>
 
 <main>
     <section class="splash">
-        <img src="img/donutdelightsplash2.png" title="Image of Coffee and Donut">
-        <p>The finest in breakfast treats and coffees since 1971.</p>
+        <img src="img/donutdelightsplash2.png" alt="Image of Coffee and Donut">
+        <h6>The finest in breakfast treats and coffees since 1971.</h6>
     </section>
     <hr>
     <!--This section is structured as a CSS table to allow for responsive layout-->
     <section class="promotion">
         <div class="firstrow">
-            <figure id="freecoffee">
+            <figure class="freecoffee">
                 <div id="ytaspectratio">
-                    <iframe src="https://www.youtube-nocookie.com/embed/aWMjUQFEGd0?rel=0&amp;controls=0&amp;showinfo=0&amp;loop=1&amp;autoplay=0&amp;modestbranding=1&amp;fs=0&amp;playlist=aWMjUQFEGd0" frameborder="0" allow="autoplay; encrypted-media"></iframe>
+                    <iframe src="https://www.youtube-nocookie.com/embed/aWMjUQFEGd0?rel=0&amp;controls=0&amp;showinfo=0&amp;loop=1&amp;autoplay=1&amp;modestbranding=1&amp;fs=0&amp;playlist=aWMjUQFEGd0" allow="autoplay; encrypted-media"></iframe>
                 </div>
             </figure>            
-            <figure id="vetad">
+            <figure class="vetad">
                 <img src="img/vetsAdLoop.gif" alt="Veterans Eat Free">
             </figure>
-            <figure id="factoid">
+            <figure class="factoid">
                 <h2>Did You Know?</h2>
                 <p>About 10 billion donuts are produced in the US each year!</p>
             </figure>
         </div>
 
         <div class="secondrow">
-            <figure id="subscription">
+            <figure class="subscription">
                 <p>Subscribe to our newsletter for the latest on our seasonal offerings and special events!</p>
                 <form action="https://formspree.io/kyang1@stu.parkland.edu" method="POST" name="subscribeform">
-                    <input type="email" name="email" placeholder="Enter Email Address Here" required>
+                    <label for="email">&nbsp;</label>
+                    <input type="email" name="email" placeholder="Enter Email Address Here" id="email" required>
                     <input type="hidden" name="_subject" value="Subscribe">
                     <br><input type="submit" value="Submit">
                 </form>
             </figure>
-            <figure id="socialmedia">
+            <figure class="socialmedia">
                 <p>Check Us Out On Social Media For More Fun Events and Promotions!</p>
-                <a href="https://twitter.com/"><img src="img/twitter.png" alt="Twitter Icon"></a>
-                <a href="https://www.facebook.com/"><img src="img/facebook.png" alt="Facebook Icon"></a>
-                <a href="https://www.instagram.com/"><img src="img/instagram.png" alt="Instagram Icon"></a>
-                <a href="https://plus.google.com/"><img src="img/googleplus.png" alt="Google+ Icon"></a>
+                <a href="https://twitter.com/" title="Twitter"><img src="img/twitter.png" alt="Twitter Icon"></a>
+                <a href="https://www.facebook.com/" title="Facebook"><img src="img/facebook.png" alt="Facebook Icon"></a>
+                <a href="https://www.instagram.com/" title="Instagram"><img src="img/instagram.png" alt="Instagram Icon"></a>
+                <a href="https://plus.google.com/" title="Google+"><img src="img/googleplus.png" alt="Google+ Icon"></a>
             </figure>
         </div>
     </section>
@@ -96,6 +132,7 @@
         <p>&copy; 2018 Donut Delights</p>
         <a href="#">Return to Top</a>
     </div>
+</footer>
 </body>
 
 </html>

@@ -1,5 +1,5 @@
 section {
-    background: rgba(86,40,20,0.8);
+    background: rgba(93,46,26,0.8);
     padding: 2em;
 }
 
@@ -31,38 +31,26 @@ section {
     font-size: 1.35em;
 }
 
-#contact a {
-    color: #ecd7a0;
-}
-
-#contact a:hover,
-#contact a:focus {
-    color: #ffc73b;
-}
-
-.smallboxes #map {
+#map {
     float: none;
     height: 32em;
     overflow: hidden;
     padding: 2em 3%;
 }
-
 #map iframe {
     width: 100%;
     height: 100%;
     border: 1px solid #ecd7a1;
 }
 
-.smallboxes #donutdisplay {
+#donutdisplay {
     width: 60%;
     height: 30em;
 }
-
 #donutdisplay figure {
     margin: 0 auto;
     text-align: center;
 }
-
 #donutdisplay figcaption {
     padding-top: 0.4em;
     font-style: italic;
@@ -70,18 +58,16 @@ section {
     font-size: 1.3em;
     letter-spacing: 0.05em;
 }
-
 #donutdisplay img {
     width: 31em;
     border: 1px solid #ecd7a1;
 }
 
-.smallboxes #hours {
+#hours {
     width: 40%;
     height: 30em;
     padding: 3em;
 }
-
 #hours h2 {
     font-family: passionone, Tahoma, sans-serif;
     font-size: 2.3em;
@@ -91,13 +77,11 @@ section {
     margin-top: 0.5em;
     margin-bottom: 1.2em;
 }
-
 #hours h3 {
     margin-left: 12%;
     font-size: 1.4em;
     font-weight: normal;
 }
-
 #hours p {
     text-align: right;
     font-size: 1.4em;
@@ -117,7 +101,6 @@ section {
     margin-top: 0;
     padding: 3em;
 }
-
 #storefront img {
     display: block;
     margin: 0 auto;
@@ -131,7 +114,6 @@ section {
     overflow: auto;
     padding: 4%;
 }
-
 #form h2 {
     font-family: passionone, Tahoma, sans-serif;
     font-size: 2em;
@@ -139,46 +121,63 @@ section {
     letter-spacing: 0.02em;
     font-weight: normal;
 }
-
 #form input,
 #form textarea {
-    margin: 0.5em 0;
     padding: 0.3em 0.5em;
     color: #281200;
     background: #fff8e2;
-    border: 2px solid black;
+    border: 2px ridge #ecd7a0;
     font-weight: bold;
+    position: relative;
 }
-
 #form input[name="name"] {
-    width: 45%;
+    width: 46%;
 }
-
 #form input[name="email"] {
-    width: 53%;
+    width: 50%;
     float: right;
 }
-
-#form input[name="subject"] {
+#form input[name="_subject"] {
     width: 100%;
 }
-
 #form textarea[name="message"] {
     width: 100%;
     height: 15em;
+    margin-bottom: 1.4em;
 }
-
 #form input[name="subscribe"] {
-    margin-top: 0.8em;
-    margin-left: 0.3em;
+    margin: 0.5em;
 }
-
 #form input[type="submit"] {
     margin: 0;
     float: right;
     width: 8em;
     font-size: 1.2em;
     background: #281200;
-    color: #fff8e2;
+    color: #dbceae;
     border-color: #ecd7a0;
+}
+#form input:focus,
+#form textarea:focus,
+#form input[type="submit"]:hover {
+    outline: 3px solid #ffc73b;
+}
+#form label {
+    width: 50%;
+    float: left;
+    display: block;
+    margin: 0.5em 0 0.2em;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+#form label[for="subscribe"] {
+    font-size: 1.2em;
+    font-weight: normal;
+    margin-top: 0;
+}
+#form label span {
+    color: rgb(233, 69, 29);
+}
+#form .error {
+    border-color: rgb(233, 69, 29);
 }

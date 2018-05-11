@@ -6,23 +6,27 @@
     <meta name="description" content="Home of Donut Delights in Champaign. Come try our fresh baked donuts and our in-house roasted coffee!">
     <meta name="keyword" content="donut delights, donuts, coffee, pastries, breakfast, baked, champaign, local, menu">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128">   
+
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/site.css">
     <link rel="stylesheet" href="css/contact.css">
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
-    <link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
-    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
-    <link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />    
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118467175-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
@@ -30,6 +34,33 @@
         gtag('js', new Date());
 
         gtag('config', 'UA-118467175-1');
+    </script>
+    <script src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery.validate.js"></script>
+    <script>
+        $().ready(function() {
+            var validator = $("form").validate({
+                errorPlacement: function(error, element) {
+                    $( element )
+                        .closest( "form" )
+                            .find( "label[for='" + element.attr( "id" ) + "']" )
+                                .append( error );
+                },
+                errorElement: "span",
+                messages: {
+                    email: {
+                        required: "Please enter your email address.",
+                        email: "Please enter a valid email address."
+                    },
+                    name: {
+                        required: "Please enter your name."
+                    },
+                    _subject: {
+                        required: "Please enter a subject for your message."
+                    }
+                }
+            });
+        });
     </script>
 </head>
 
@@ -42,7 +73,7 @@
             <li class="navlink"><a href="menu.html">Menu</a></li>
             <li class="logo"><a href="index.html"><img src="img/logo180.png" alt="Donut Delights Logo"></a></li>
             <li class="navlink navright"><a href="about.html">About</a></li>
-            <li class="navlink navright"><a href="contact.html" class="currentpage">Find Us</a></li>
+            <li class="navlink navright"><a href="contact.html" class="currentpage">Contact</a></li>
         </ul>
     </nav>
 </header>
@@ -60,7 +91,7 @@
             <h3><a href="&#x6d;&#x61;&#x69;&#108;&#x74;&#x6f;&#x3a;&#x63;&#x6f;&#110;&#x74;&#97;&#x63;&#116;&#x40;&#100;&#111;&#110;&#x75;&#116;&#x64;&#x65;&#x6c;&#105;&#x67;&#x68;&#x74;&#x73;&#46;&#x63;&#111;&#109;">&#99;&#x6f;&#110;&#x74;&#97;&#99;&#x74;&#x40;&#100;&#111;&#110;&#117;&#116;&#100;&#x65;&#x6c;&#x69;&#x67;&#104;&#116;&#x73;&#x2e;&#x63;&#111;&#x6d;</a></h3>
         </section>
         <section id="map">
-            <iframe width="400" height="400" frameborder="0"
+            <iframe width="400" height="400"
                 src="https://www.google.com/maps/embed/v1/place?key=AIzaSyAuLcw3BK3A1Y4-Qs5UK3awoDWCdqkgD8E&amp;q=2112+Main+Street,Urbana+IL" allowfullscreen>
             </iframe>
         </section>
@@ -83,13 +114,16 @@
     </section>
     <section id="form">
         <h2>Questions or Feedback? Leave a Message!</h2>
-        <form action="" method="POST" name="commentform" id="commentform">
-            <input type="text" name="name" id="name" placeholder="Your Name" required>
-            <input type="email" name="email" id="email" placeholder="Email Address" required><br>
-            <input type="text" name="subject" id="subject" placeholder="Subject" required><br>
-            <textarea name="message" id="message" placeholder="Your Message Here"></textarea><br>
-            <input type="checkbox" name="subscribe" id="subscribe">
-            <label for="subscribe">Check to subscribe to our newsletter!</label>
+        <form action="https://formspree.io/kyang1@stu.parkland.edu" method="POST" name="commentform">
+            <label for="name">&nbsp;</label>
+            <label for="email">&nbsp;</label>
+            <input type="text" name="name" placeholder="Your Name" id="name" required>
+            <input type="email" name="email" placeholder="Email Address" id="email" required><br>
+            <label for="_subject">&nbsp;</label>
+            <input type="text" name="_subject" placeholder="Subject" id="_subject" required><br>
+            <label for="message">&nbsp;</label>
+            <textarea name="message" placeholder="Your Message Here" id="message"></textarea><br>
+            <label for="subscribe"><input type="checkbox" name="subscribe" id="subscribe" value="Subscribe">Check to subscribe to our newsletter!</label>
             <input type="submit" value="Submit">
         </form>
     </section>
@@ -99,7 +133,8 @@
     <div>
         <p>&copy; 2018 Donut Delights</p>
         <a href="#">Return to Top</a>
-    </div>
+    </div>  
+</footer>
 </body>
 
 </html>

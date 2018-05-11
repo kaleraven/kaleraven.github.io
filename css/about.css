@@ -1,25 +1,31 @@
 section {
-    margin: 2em;
-    background: rgba(86,40,20,0.8);
+    display: table;
+    margin: 2.5%;
     letter-spacing: 0.05em;
     line-height: 150%;
 }
 
-section div {
-    display: table-cell;
-    vertical-align: middle;
-    padding: 5%;
-    font-size: 1.1em;
-}
-
+section div,
 section figure {
     display: table-cell;
     vertical-align: middle;
     padding: 5%;
+    font-size: 1.1em;
+    background: rgba(93,46,26,0.8);
+    background-clip: padding-box;
+}
+
+section figure:nth-child(even) {
+    border-left: 1.5em solid transparent;
+}
+
+section figure:nth-child(odd) {
+    border-right: 1.5em solid transparent;
 }
 
 section img {
-    width: 100%;;
+    display: block;
+    width: 100%;
     border: 1px solid #ecd7a1;
 }
 
@@ -27,29 +33,41 @@ section p {
     margin: 0;
 }
 
-section .p1 {
-    padding-bottom: 5%;
+br {
+    content: "";
+    display: block;
+    height: 0.8em;
+}
+
+section a {
+    display: block;
+}
+
+section a:hover, 
+seciton a:focus {
+    border-color: #ffc73b;
+    outline: 2px solid #ffc73b;
 }
 
 #first div {
-    width: 60%;
+    width: 55%;
 }
 #first figure {
-    width: 40%;
+    width: 45%;
 }
 
 #second figure {
-    width: 45%;
+    width: 50%;
 }
 #second div {
-    width: 55%;
+    width: 50%;
 }
 
 #third div {
-    width: 50%;
+    width: 45%;
 }
 #third figure {
-    width: 50%;
+    width: 55%;
 }
 
 #fourth div {
@@ -64,18 +82,10 @@ section .p1 {
     font-size: 2em;
     font-weight: normal;
 }
-
 #fourth p {
     margin-bottom: 12%;
 }
-
-#fourth br {
-    content: "";
-    display: block;
-    height: 0.8em;
-}
-
-aside {
+#fourth aside {
     font-size: 0.5em;
     line-height: normal;
 }

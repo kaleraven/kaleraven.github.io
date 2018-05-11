@@ -6,31 +6,36 @@
     <meta name="description" content="Home of Donut Delights in Champaign. Come try our fresh baked donuts and our in-house roasted coffee!">
     <meta name="keyword" content="donut delights, donuts, coffee, pastries, breakfast, baked, champaign, local, menu">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <link rel="icon" href="favicon.ico">
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png">
+    <link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196">
+    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128">  
+
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/site.css">
     <link rel="stylesheet" href="css/menu.css">
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="apple-touch-icon-60x60.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="apple-touch-icon-120x120.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="apple-touch-icon-76x76.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="apple-touch-icon-152x152.png" />
-    <link rel="icon" type="image/png" href="favicon-196x196.png" sizes="196x196" />
-    <link rel="icon" type="image/png" href="favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16" />
-    <link rel="icon" type="image/png" href="favicon-128.png" sizes="128x128" />    
+    <link rel="stylesheet" href="css/lightbox.css">
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-118467175-1"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'UA-118467175-1');
     </script>
+    <script defer src="http://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script defer src="js/lightbox.js"></script>
 </head>
 
 <body>
@@ -42,14 +47,14 @@
             <li class="navlink"><a href="menu.html" class="currentpage">Menu</a></li>
             <li class="logo"><a href="index.html"><img src="img/logo180.png" alt="Donut Delights Logo"></a></li>
             <li class="navlink navright"><a href="about.html">About</a></li>
-            <li class="navlink navright"><a href="contact.html">Find Us</a></li>
+            <li class="navlink navright"><a href="contact.html">Contact</a></li>
         </ul>
     </nav>
 </header>
 
 <main>
     <h1>Our Menu</h1>
-    <div id="menucolumn">
+    <div class="menucolumn">
         <section id="donuts">
             <h2>Delicious Donuts</h2>
             <p>Regular Donut <span>1.05</span></p>
@@ -71,7 +76,7 @@
                 <li>Coffee Roll</li>
             </ul>
             <p>Baker's Dozen (13) <span>8.65</span></p>
-            <ul>Choose 13 Regular Donuts!</ul>
+            <p id="dozendonuts">Choose 13 Regular Donuts!</p>
             <p>Fancy Donut <span>2.00</span></p>
             <ul>
                 <li>Apple Turnover</li>
@@ -93,12 +98,12 @@
         <section id="drinks">
             <h2>Rich Refreshments</h2>
             <table>
-                <thead>
+                <thead><tr>
                     <td></td>
                     <td>8oz</td>
                     <td>12oz</td>
                     <td>16oz</td>
-                </thead>
+                </tr></thead>
                 <tbody>
                     <tr>
                         <td>Coffee</td>
@@ -146,12 +151,22 @@
             </table>
         </section>
     </div>
-    <aside id="menuimage">
-        <figure><img src="img/donutsInCase.jpg" alt="Donuts in Display Case"></figure>
-        <figure><img src="img/pinwheels.jpg" alt="Pinwheels"></figure>
-        <figure><img src="img/cupcake.jpg" alt="Frosted Cupcake-things"></figure>
-        <figure><img src="img/coffee_and_chokolate.jpg" alt="Coffee and Chocolate"></figure>
-    </aside>
+    <div class="imagecolumn">
+        <aside class="menuimages">
+            <figure><a href="img/donutsInCase.jpg" data-lightbox="menupics" data-title="Donuts" title="Click to enlarge">
+                <img src="img/donutsInCase.jpg" alt="Donuts in Display Case">
+            </a></figure>
+            <figure><a href="img/pinwheels.jpg" data-lightbox="menupics" data-title="Pinwheels" title="Click to enlarge">
+                <img src="img/pinwheels.jpg" alt="Pinwheels">
+            </a></figure>
+            <figure><a href="img/cupcake.jpg" data-lightbox="menupics" data-title="Cupcakes" title="Click to enlarge">
+                <img src="img/cupcake.jpg" alt="Frosted Cupcakes">
+            </a></figure>
+            <figure><a href="img/coffee_and_chokolate.jpg" data-lightbox="menupics" data-title="Coffee" title="Click to enlarge">
+                <img src="img/coffee_and_chokolate.jpg" alt="Coffee and Chocolate">
+            </a></figure>
+        </aside>
+    </div>
     <p id="joke">Why did the clock in the donut shop stop? It always went back 'four' seconds!</p>
 </main>
 
@@ -160,6 +175,7 @@
         <p>&copy; 2018 Donut Delights</p>
         <a href="#">Return to Top</a>
     </div>
+</footer>
 </body>
 
 </html>

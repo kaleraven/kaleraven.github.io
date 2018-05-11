@@ -14,12 +14,6 @@
 }
 @font-face {
     font-family: raleway;
-    src: url("../fonts/Raleway-BoldItalic.ttf");
-    font-weight: bold;
-    font-style: italic;
-}
-@font-face {
-    font-family: raleway;
     src: url("../fonts/Raleway-Italic.ttf");
     font-style: italic;
 }
@@ -47,6 +41,17 @@ body {
     background-position: center;
 }
 
+a {
+    color: #ecd7a0;
+}
+a:hover,
+a:focus {
+    color: #ffc73b;
+}
+a:active {
+    color: #fff8e2;
+}
+
 /*  Nav Bar  */
 nav {
     font-family: passionone, Verdana, sans-serif;
@@ -56,8 +61,8 @@ nav {
     background: #d7b58f;
     width: 100%;
     height: 2.8em;
-    border-top: 5px solid #563a24;
-    border-bottom: 5px solid #563a24;
+    border-top: 5px solid #563424;
+    border-bottom: 5px solid #563424;
     letter-spacing: 0.01em;
 }
 
@@ -85,23 +90,27 @@ nav li a {
     color: #563a24;
     font-weight: bold;
     text-decoration: none;
-    transition: background .05s ease;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 0;
+    background-image: url("../img/linkhighlight2.png");
+    margin: -1em;
+    padding: 1.5em 1em;
+    transition: .1s ease;
 }
 
 .navlink a:focus, .navlink a:hover, .navlink a.currentpage {
-    background-image: url("../img/linkhighlight2.png");
-    background-repeat: no-repeat;
-    background-position: center;
     background-size: 4em;
-    /* Lets the background image overflow navbar */
-    margin: -1em;
-    padding: 1.5em 1em;
     color: #ecd7a1;
 }
 
 .navlink a.currentpage {
     text-decoration: underline;
     color: #ffc73b;
+}
+
+.navlink a:active {
+    color: #fff8e2;
 }
 
 nav .logo {
@@ -133,18 +142,18 @@ h1 {
     font-weight: bold;
     font-size: 3.5em;
     text-align: center;
-    margin: 1.2em 0.571em 0;
+    margin: 1.2em 2.5% 2.5%;
     padding: 0.3em;
     letter-spacing: 0.02em;
-    background: rgba(86,40,20,0.8);
+    background: rgba(93,46,26,0.8);
 }
 
 /*  Footer  */
 footer {
     border-top: 6px solid #d7b58f;
-    background-color: #563a24;
+    background-color: #563424;
     height: 3.5em;
-    font-size: 0.8em;
+    font-size: 0.9em;
 }
 
 footer div {
@@ -154,11 +163,9 @@ footer div {
 footer p {
     margin: 0.8em 1em;
     float: left;
-    color: #ecd7a0;
 }
 
 footer a {
     margin: 0.8em 1em;
     float: right;
-    color: #ecd7a0;
 }

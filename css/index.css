@@ -26,13 +26,14 @@ nav .logo {
     display: block;
     width: 100%;
     position: relative;
-    border-left: 5px solid #563a24;
-    border-right: 5px solid #563a24;
+    border-left: 5px solid #563424;
+    border-right: 5px solid #563424;
     z-index: -1;
 }
 
-.splash p {
+.splash h6 {
     position: absolute;
+    font-weight: normal;
     bottom: 5%;
     left: 4%;
     margin: auto;
@@ -48,7 +49,7 @@ main hr {
     position: relative;
     border: none;
     margin: 0;
-    border-top: 5px solid #563a24;
+    border-top: 5px solid #563424;
     border-bottom: 10px solid #d7b58f;
 }
 
@@ -64,27 +65,26 @@ main hr {
     width: 100%;
 }
 
-.promotion div figure {
+.promotion figure {
     display: table-cell;
     vertical-align: middle;
     padding: 2.5%;
-    /* background: rgba(86,40,20,0.8); */
     background: rgba(93,46,26,0.8);
     border-right: 2em solid transparent;
     background-clip: padding-box;
-    margin: 0;
 }
 
-.promotion #freecoffee {
+/* First Row Boxes */
+.promotion .freecoffee {
     width: 37%;
 }
-#freecoffee #ytaspectratio {
+.freecoffee #ytaspectratio {
     /* To set fixed aspect ratio */
     position: relative;
     width: 100%;
     padding-top: 75%;
 }
-#freecoffee iframe {
+.freecoffee iframe {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -92,21 +92,21 @@ main hr {
     right: 0;
     width: 100%;
     height: 100%;
+    border: none;
 }
 
-.promotion #vetad {
+.promotion .vetad {
     width: 33.4%;
 }
-#vetad img {
+.vetad img {
     width: 100%;
 }
 
-.promotion #factoid {
+.promotion .factoid {
     width: 29.6%;
     border-right: none;
-    overflow: hide;
 }
-#factoid h2 {
+.factoid h2 {
     text-align: center;
     font-size: 2.5em;
     font-family: passionone, Verdana, sans-serif;
@@ -114,7 +114,7 @@ main hr {
     font-weight: normal;
     margin-top: 0;
 }
-#factoid p {
+.factoid p {
     text-align: center;
     width: 80%;
     font-size: 1.4em;
@@ -122,50 +122,73 @@ main hr {
     padding-bottom: 1em; /* To shift contents up */
 }
 
+/* Second Row Boxes */
 .promotion .secondrow {
     margin-top: 2.5%;
 }
 
-.promotion #subscription {
+.promotion .subscription {
     width: 45%;
     text-align: center;
     padding: 3% 5%;
 }
-#subscription p {
+.subscription p {
     font-size: 1.5em;
     margin: 0;
 }
-#subscription input {
+.subscription input {
     padding: 0.3em;
-    border: 1px solid #ecd7a0;
+    border: 2px ridge #ecd7a0;
     font-size: 1.2em;
     padding: 0.3em;
     font-weight: bold;
 }
-#subscription input[type="email"] {
+.subscription input[type="email"] {
     width: 90%;
-    margin-top: 2em;
     color: #281200;
+    background: #fff8e2;
 }
-#subscription input[type="submit"] {
+.subscription input[type="submit"] {
     margin-top: 1.5em;
-    width: 30%;
+    width: 7em;
     background: #281200;
 }
+.subscription input[type="submit"]:hover,
+.subscription input:focus {
+    outline: 3px solid #ffc73b;
+}
+.subscription label {
+    display: block;
+    margin-top: 0.8em;
+    margin-bottom: 0.2em;
+    font-size: 1em;
+    color: rgb(233, 69, 29);
+    font-weight: bold;
+}
+.subscription .error {
+    border-color: rgb(233, 69, 29);
+}
 
-.promotion #socialmedia {
+.promotion .socialmedia {
     padding: 3% 4%;
     border-right: none;
     text-align: center;
 }
-#socialmedia p {
+.socialmedia p {
     font-size: 1.6em;
     margin: 0 0 1.5em;
 }
-#socialmedia a {
-    width: 24%;
+.socialmedia a {
+    width: 20%;
     display: inline-block;
 }
-#socialmedia img {
+.socialmedia img {
     width: 75px;
+}
+.socialmedia img:hover,
+.socialmedia a:focus > img {
+    outline: 3px solid #ffc73b;
+}
+.socialmedia a:focus {
+    outline: none;
 }

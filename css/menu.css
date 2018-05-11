@@ -1,19 +1,25 @@
-/* Menu Text */
-div#menucolumn {
+h1 {
+    margin-bottom: 0;
+}
+
+/* Menu Column */
+.menucolumn {
     float: left;
+    vertical-align: top;
     width: 50%;
+    padding: 2.5%;
+    padding-right: 1.25%;
 }
 
-section {
-    background: rgba(86,40,20,0.8);
-    padding: 2em;
-    margin: 2em;
-    object-fit: contain;
+.menucolumn section {
+    background: rgba(93,46,26,0.8);
+    padding: 7%;
+    margin-bottom: 5%;
 }
 
-h2 {
+.menucolumn h2 {
     margin: 0;
-    margin-bottom: 0.6em;
+    margin-bottom: 0.8em;
     font-family: passionone, Tahoma, sans-serif;
     font-size: 2.1em;
     text-align: center;
@@ -21,13 +27,13 @@ h2 {
     letter-spacing: 0.02em;
 }
 
-section p {
+.menucolumn p {
     clear: both;
     font-size: 1.25em;
     margin: 0;
 }
 
-section p span {
+.menucolumn p span {
     float: right;
 }
 
@@ -39,7 +45,7 @@ section p span {
     overflow: auto;
 }
 
-#donuts ul li {
+#donuts li {
     width: 30%;
     min-width: 9em;
     list-style: none;
@@ -47,8 +53,19 @@ section p span {
     margin: 0.15em 0.2em;
 }
 
+#donuts #dozendonuts {
+    width: auto;
+    margin: 1em 1.5em 1.5em;
+    font-weight: 300;
+    font-size: 0.9em;
+}
+
 #favorites p {
     margin-top: 1em;
+}
+
+#drinks {
+    margin-bottom: 0;
 }
 
 #drinks table {
@@ -69,42 +86,56 @@ section p span {
     text-align: left;
 }
 
-/* Image bar */
-#menuimage {
+/* Image Column */
+.imagecolumn {
     float: right;
+    position: relative;
+    vertical-align: top;
     width: 50%;
-    border-right: 2em solid transparent;
-    border-top: 2em solid transparent;
-    margin-bottom: 2em;
-    background: rgba(86,40,20,0.8);
-    background-clip: content-box;
+    padding: 2.5%;
+    padding-left: 1.25%;
 }
 
-#menuimage figure {
-    margin: 0 auto;
-    padding: 1em 8%;
-}
-
-#menuimage img {
-    margin: 0 auto;
-    max-width: 435px;
+.menuimages {
     width: 100%;
+    display: table;
+    padding: 6%;
+    background: rgba(93,46,26,0.8);
+    background-clip: padding-box;
+}
+
+.menuimages a {
     display: block;
+}
+
+.menuimages figure {
+    width: fit-content;
+    width: -moz-fit-content;
+    margin: 0 auto;
+    margin-bottom: 6%;
+}
+
+.menuimages img {
+    max-width: 440px;
+    display: block;
+    width: 100%;
     border: 1px solid #ecd7a1;
 }
 
-#menuimage figure:first-child {
-    padding-top: 2em;
+.menuimages a:hover,
+.menuimages a:focus {
+    outline: 3px solid #ffc73b;
 }
 
-#menuimage figure:last-child {
-    padding-bottom: 2em;
+.menuimages figure:last-child {
+    margin-bottom: 0;
 }
 
 /* Text at bottom */
-p#joke {
+#joke {
     clear: both;
-    margin: 1.43em;
+    margin: 2.5%;
+    margin-top: 0;
     padding: 0.6em;
     font-style: italic;
     text-align: center;
