@@ -92,6 +92,10 @@ seciton a:focus {
 
 @media only screen and (max-width: 568px) 
 {
+    h1 {
+        margin-bottom: 4%;
+    }
+    
     section {
         margin: 0;
         line-height: normal;
@@ -99,8 +103,8 @@ seciton a:focus {
 
     section div,
     section figure {
-        font-size: 1.3em;
-        line-height: 1.4em;
+        font-size: 1.5em;
+        line-height: 1.6em;
         border: none;
         width: 100% !important;
     }
