@@ -192,3 +192,73 @@ main hr {
 .socialmedia a:focus {
     outline: none;
 }
+
+@media only screen and (max-width: 568px) 
+{
+    nav {
+        margin-top: 0;
+    }
+
+    nav li {
+        width: 25%;
+    }
+
+    nav .logo {
+        top: 6em;
+        left: 0;
+        width: 180px;
+        height: 180px;
+        background-image: url("../img/logo180.png");
+        margin: 0;
+    }
+
+    .splash img {
+        border: none;
+    }
+
+    .splash h6 {
+        position: relative;
+        background: #d7b58f;
+        padding: 3%;
+        margin: none;
+        left: auto;
+        bottom: auto;
+        width: 100%;
+        text-align: center;
+        border-top: 5px solid #563424;
+        border-bottom: 5px solid #563424;
+    }
+
+    main hr {
+        display: none;
+    }
+
+    .promotion {
+        font-size: 1.2em;
+        margin: 3% 0;
+    }
+
+    .promotion > div {
+        display: block;
+
+    }
+
+    .promotion figure {
+        display: block;
+        width: 100% !important;
+        margin: 3% 0 !important;
+        border: none;
+    }
+
+    .socialmedia img {
+        width: 4em;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    nav .logo {
+        width: 120px;
+        height: 120px;
+        background-image: url("../img/logo120.png");
+    }
+}

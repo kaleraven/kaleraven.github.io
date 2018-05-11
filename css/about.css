@@ -89,3 +89,59 @@ seciton a:focus {
     font-size: 0.5em;
     line-height: normal;
 }
+
+@media only screen and (max-width: 568px) 
+{
+    h1 {
+        margin-bottom: 4%;
+    }
+
+    section {
+        margin: 0;
+        line-height: normal;
+    }
+
+    section div,
+    section figure {
+        font-size: 1.5em;
+        line-height: 1.6em;
+        border: none;
+        width: 100% !important;
+    }
+    
+    section figure:nth-child(even),
+    section figure:nth-child(odd) {
+        border: none;
+    }
+    section img {
+        border: 2.5em solid transparent;
+    }
+
+    section div {
+        display: table-row-group;
+    }
+    section figure {
+        display: table-header-group;
+    }
+    section p {
+        display: block;
+        margin: 4%;
+    }
+    #fourth h3 {
+        margin: 4%;
+    }
+    #fourth aside {
+        margin: 4%;
+        font-size: 0.6em;
+    }
+    #fourth {
+        margin-bottom: 5%;
+    }
+}
+
+@media only screen and (max-width: 320px) 
+{
+    section img {
+        border: none;
+    }
+}

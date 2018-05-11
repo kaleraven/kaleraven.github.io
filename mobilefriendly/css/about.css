@@ -95,7 +95,7 @@ seciton a:focus {
     h1 {
         margin-bottom: 4%;
     }
-    
+
     section {
         margin: 0;
         line-height: normal;
@@ -112,6 +112,9 @@ seciton a:focus {
     section figure:nth-child(even),
     section figure:nth-child(odd) {
         border: none;
+    }
+    section img {
+        border: 2.5em solid transparent;
     }
 
     section div {
@@ -133,5 +136,12 @@ seciton a:focus {
     }
     #fourth {
         margin-bottom: 5%;
+    }
+}
+
+@media only screen and (max-width: 320px) 
+{
+    section img {
+        border: none;
     }
 }

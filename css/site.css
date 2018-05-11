@@ -169,3 +169,63 @@ footer a {
     margin: 0.8em 1em;
     float: right;
 }
+
+@media only screen and (max-width: 568px) 
+{
+    html {
+        font-size: 0.6em;
+    }
+
+    body {
+        min-width: unset;
+    }
+
+    nav {
+        margin: 0;
+    }
+
+    nav .logo {
+        width: 72px;
+        background-image: url("../img/logo80.png");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        z-index: 2;
+        position: absolute;
+        top: -1em;
+        height: 72px;
+    }
+
+    .logo img {
+        display: none;
+    }
+
+    nav li {
+        padding: 0.5em 0;
+    }
+
+    nav li a {
+        background: none;
+        font-size: 1.15em;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navlink a.currentpage {
+        color: #b55200;
+    }
+
+    h1 {
+        margin: 5% 0 0;
+    }
+
+    footer {
+        border-top-width: 4px;
+        font-size: 1.15em;
+    }
+
+    footer a {
+        font-weight: bold;
+    }
+
+}

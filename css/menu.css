@@ -1,5 +1,5 @@
 h1 {
-    margin-bottom: 0;
+    margin: 5% 2.5% 0;
 }
 
 /* Menu Column */
@@ -142,4 +142,54 @@ h1 {
     font-size: 1.4em;
     letter-spacing: 0.05em;
     background: rgba(86,40,20,0.8);
+}
+
+@media only screen and (max-width: 568px) 
+{
+    h1 {
+        margin: 5% 0 2.5%;
+    }
+
+    .menucolumn {
+        float: none;
+        /* display: table-row-group; */
+        width: 100%;
+        font-size: 1.3em;
+        padding: 0;
+    }
+
+    .menucolumn section {
+        margin: 3% 0 0;
+    }
+
+    #donuts ul,
+    #donuts #dozendonuts {
+        font-size: 1em;
+    }
+
+    .imagecolumn {
+        float: none;
+        /* display: table-header-group; */
+        width: 100%;
+        padding: 0;
+    }
+
+    .menuimages {
+        padding: 0;
+        background: none;
+    }
+
+    .menuimages figure {
+        margin: 3% 0 0;
+    }
+
+    .menuimages img {
+        border: none;
+        max-width: initial;
+    }
+
+    #joke {
+        margin: 3% 0;
+    }
+
 }

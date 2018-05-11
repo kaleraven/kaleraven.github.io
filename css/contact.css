@@ -140,7 +140,7 @@ section {
 #form input[name="_subject"] {
     width: 100%;
 }
-#form textarea[name="message"] {
+#form textarea {
     width: 100%;
     height: 15em;
     margin-bottom: 1.4em;
@@ -180,4 +180,111 @@ section {
 }
 #form .error {
     border-color: rgb(233, 69, 29);
+}
+
+@media only screen and (max-width: 568px) 
+{
+    section {
+        padding: 3%;
+        margin: 3% 0 !important;
+        width: 100% !important;
+        float: none !important;
+        font-size: 1.2em;
+        height: auto;
+    }
+
+    .smallboxes {
+        margin: 0;
+        width: 100%;
+    }
+
+    .smallboxes section {
+        border: none;
+        margin: 3% 0;
+    }
+
+    .smallboxes #contact {
+        height: auto;
+        padding: 3% 10%;
+    }
+
+    .smallboxes #map {
+        padding: 3%;
+        height: 28em;
+    }
+
+    #map iframe {
+        border: none;
+    }
+
+    #donutdisplay {
+        height: auto;
+        padding: 3% 0;
+    }
+
+    #donutdisplay img {
+        width: 100%;
+        border: none;
+    }
+
+    #hours {
+        height: auto;
+        padding: 3%;
+        font-size: 1.4em;
+    }
+
+    #storefront {
+        padding: 3% 0;
+        overflow: hidden;
+    }
+
+    #storefront img {
+        border: none;
+        width: 130%;
+    }
+
+    #form {
+        padding: 3%;
+        text-align: center;
+        font-size: 1.3em;
+    }
+
+    #form h2 {
+        margin: 3% 10%;
+    }
+
+    #form input[type="text"],
+    #form input[type="email"],
+    #form textarea {
+        width: 100%;
+    }
+
+    #form input[name="email"] {
+        margin-top: 1.7em;
+    }
+
+    #form label {
+        width: 100%;
+    }
+
+    #form label[for="name"] {
+        margin: 0;
+        position: relative;
+        top: 0.9em;
+    }
+
+    #form label[for="email"] {
+        margin: 0;
+        position: relative;
+        top: 4.1em;
+    }
+
+    #form textarea {
+        margin-bottom: 0.1em;
+    }
+
+    #form input[type="submit"] {
+        float: none;
+        margin-top: 0.5em;
+    }
 }
